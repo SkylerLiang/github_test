@@ -4,13 +4,13 @@
 
 ​					
 
-![](E:\newcodes\github_test\Test_for_circuit\F405\CAN_TEST_RM3508\pic_for_md\6411ea4fc9707ad4578395d7455b0b3.jpg)
+![](pic_for_md\1.jpg)
 
 到时候电控组会确保提供的电机和电调是可以正常运转的
 
 ### 第二步： 接线，电机接电调，电调接板子
 
-![微信图片_20231015195928](E:\newcodes\github_test\Test_for_circuit\F405\CAN_TEST_RM3508\pic_for_md\微信图片_20231015195928.png)这是一个接线实例，箭头标注的地方就是连接处，需要稍加注意。不过一般上手接一下就知道怎么回事了，一点也不复杂。不过还是需要注意，can_H和can_L不要接反了，不然会什么数据也没有。
+![](pic_for_md\2.png)这是一个接线实例，箭头标注的地方就是连接处，需要稍加注意。不过一般上手接一下就知道怎么回事了，一点也不复杂。不过还是需要注意，can_H和can_L不要接反了，不然会什么数据也没有。
 
 ### 第三步：上电源看电调闪几次绿光，记住那个数值，就是电调的ID
 
@@ -20,15 +20,15 @@
 
 点击左project一栏中CAR1文件的‘’+‘’（加号），因为我这个文件不是新建的，所以名字不是CAN_TEST_RM3508,但是不影响测试结果，请大家放心
 
-<img src="E:\newcodes\github_test\Test_for_circuit\F405\CAN_TEST_RM3508\pic_for_md\91e642897d4bae517d7c477bb6c77e1.png" alt="91e642897d4bae517d7c477bb6c77e1" style="zoom:50%;" />然后双击main.c文件进入主函数的编辑
+然后双击main.c文件进入主函数的编辑
 
-<img src="E:\newcodes\github_test\Test_for_circuit\F405\CAN_TEST_RM3508\pic_for_md\微信图片_20231015202316.png" style="zoom:50%;" />
+![](pic_for_md\3.png)
 
 
 
 随后在第117行找到这一行命令，这里绿色框里是0x03，这就是一开始电调单位时间内闪的次数，表示是电调的ID，如果电调闪7次，把0x03改成0x07就好了
 
-![微信图片_20231015202641](E:\newcodes\github_test\Test_for_circuit\F405\CAN_TEST_RM3508\pic_for_md\微信图片_20231015202641.png)
+![](pic_for_md\4.png)
 
 先编译，再烧录，烧录完按板子上的reset即可
 
