@@ -98,6 +98,7 @@ int main(void)
 
   /* USER CODE BEGIN 2 */
 	CAN_Init(&hcan1);
+	CAN_Init(&hcan2);
 	
   /* USER CODE END 2 */
 
@@ -108,7 +109,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		GM6020_Set_Speed(100,1); 
+		GM6020_Set_Speed(100,4); 
 
 		HAL_Delay(1);
 		
@@ -177,13 +178,37 @@ void HAL_CAN_RxFifo0MsgPendingCallback(CAN_HandleTypeDef *hcan)
 		{
 			if(RxMessage.StdId>=0x205&&RxMessage.StdId<=0x20B)
 			{
-				GM6020_Get_Feedback(0x205, RxData);
+				GM6020_Get_Feedback(RxMessage.StdId, RxData);
+				
 			}
 		}
 		/*自己写解析函数*/
 	
 	}
 }
+
+void HAL_CAN_RxFif1MsgPendingCallback(CAN_HandleTypeDef *hcan)
+{	
+	if(hcan->Instance == hcan2.Instance)
+	{
+		CAN_RxHeaderTypeDef RxMessage;
+		uint8_t RxData[8] = {0};
+	
+		HAL_CAN_GetRxMessage(&hcan2, CAN_RX_FIFO1, &RxMessage, RxData);	
+		
+		
+		if(RxMessage.IDE==CAN_ID_STD)
+		{
+			if(RxMessage.StdId>=0x205&&RxMessage.StdId<=0x20B)
+			{
+				GM6020_Get_Feedback(RxMessage.StdId, RxData);
+			}
+		}
+		/*自己写解析函数*/
+	
+	}
+}
+
 /* USER CODE END 4 */
 
 /**
