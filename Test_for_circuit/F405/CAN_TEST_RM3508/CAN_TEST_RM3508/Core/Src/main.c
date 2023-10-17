@@ -114,7 +114,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		
 	
-		RM3508_Set_Speed(1000,0x03);
+		RM3508_Set_Speed(1500,0x01);
 	
 		
 		

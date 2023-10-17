@@ -65,7 +65,8 @@ uint8_t GM6020_Set_V(int target_v, uint8_t motor_id)
         can_Sendbuf[2 * motor_id - 2] = target_v >> 8;          //电压值高8位
         can_Sendbuf[2 * motor_id - 1] = target_v & 0x00ff;      //电压值低8位
 
-       GM6020_CAN_Send_Data(&hcan1, can_Sendbuf, send_id, 8);
+				GM6020_CAN_Send_Data(&hcan1, can_Sendbuf, send_id, 8);
+//				GM6020_CAN_Send_Data(&hcan2, can_Sendbuf, send_id, 8);
 		
         return 0;
     }

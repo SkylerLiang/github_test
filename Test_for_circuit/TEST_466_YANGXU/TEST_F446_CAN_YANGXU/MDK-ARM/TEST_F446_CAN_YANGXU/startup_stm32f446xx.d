@@ -1,0 +1,1 @@
+test_f446_can_yangxu\startup_stm32f446xx.o: startup_stm32f446xx.s
