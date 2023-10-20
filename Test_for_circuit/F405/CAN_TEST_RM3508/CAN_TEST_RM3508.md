@@ -34,7 +34,7 @@
 
 <img src="pic_for_md\5.png" style="zoom:50%;" />
 
-同时也要注意，需要将“RM3508.c”文件中的RM3508_Set_I函数中的图示语句改成测试对应Can相关的语句，测试can1的话就用上面那一条，下面一条是测试can2的时候用的，就注释掉就好了。<img src="\pic_for_md\6.png"  />
+同时也要注意，需要将“RM3508.c”文件中的RM3508_Set_I函数中的图示语句改成测试对应Can相关的语句，测试can1的话就用上面那一条，下面一条是测试can2的时候用的，就注释掉就好了。<img src="pic_for_md\6.png"  />
 
 
 
