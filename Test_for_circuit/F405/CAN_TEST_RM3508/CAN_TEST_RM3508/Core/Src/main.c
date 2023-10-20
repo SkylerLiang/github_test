@@ -114,9 +114,7 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		
 	
-		RM3508_Set_Speed(1500,0x01);
-	
-		
+		RM3508_Set_Speed(1500,1);
 		
 		HAL_Delay(1);
 		
