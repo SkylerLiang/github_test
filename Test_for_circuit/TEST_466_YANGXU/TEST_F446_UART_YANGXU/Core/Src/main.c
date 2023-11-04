@@ -103,26 +103,26 @@ int main(void)
   MX_UART5_Init();
   MX_UART4_Init();
   /* USER CODE BEGIN 2 */
-//	__HAL_UART_ENABLE_IT(&huart1,UART_IT_IDLE);
+	__HAL_UART_ENABLE_IT(&huart1,UART_IT_IDLE);
 //	__HAL_UART_ENABLE_IT(&huart5,UART_IT_IDLE);
 //	__HAL_UART_ENABLE_IT(&huart6,UART_IT_IDLE);
-	__HAL_UART_ENABLE_IT(&huart4,UART_IT_IDLE);
+//	__HAL_UART_ENABLE_IT(&huart4,UART_IT_IDLE);
 
 	
 	
 
 
-//	HAL_UART_Transmit(&huart1,Tx_Str1,sizeof(Tx_Str1),10000);		
+	HAL_UART_Transmit(&huart1,Tx_Str1,sizeof(Tx_Str1),10000);		
 //  HAL_UART_Transmit(&huart5,Tx_Str5,sizeof(Tx_Str5),10000);	
 //  HAL_UART_Transmit(&huart6,Tx_Str6,sizeof(Tx_Str6),10000);	
-    HAL_UART_Transmit(&huart4,Tx_Str4,sizeof(Tx_Str4),10000);	
+//    HAL_UART_Transmit(&huart4,Tx_Str4,sizeof(Tx_Str4),10000);	
 	
 	
 
-//	HAL_UART_Receive_DMA(&huart1,ReceiveData1,buffsize);
-	//HAL_UART_Receive_DMA(&huart5,ReceiveData5,buffsize);
+	HAL_UART_Receive_DMA(&huart1,ReceiveData1,buffsize);
+//  HAL_UART_Receive_DMA(&huart5,ReceiveData5,buffsize);
 //	HAL_UART_Receive_DMA(&huart6,ReceiveData6,buffsize);
-    HAL_UART_Receive_DMA(&huart4,ReceiveData4,buffsize);
+//    HAL_UART_Receive_DMA(&huart4,ReceiveData4,buffsize);
   /* USER CODE END 2 */
 
   /* Infinite loop */

@@ -106,7 +106,9 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		RM3508_Set_Speed(set_speed2,id);
+		RM3508_Set_Speed(3500,1);
+		RM3508_Set_Speed(3500,2);
+		
 		speed=RM3508_Get_Speed(id);
 		HAL_Delay(1);
   }

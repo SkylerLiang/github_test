@@ -49,7 +49,7 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
+int speed=0;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -99,7 +99,7 @@ int main(void)
 	CAN_Init(&hcan1);
 	CAN_Init(&hcan2);
 	
-	
+	speed =1000;
 	
 	
 	
@@ -114,7 +114,8 @@ int main(void)
     /* USER CODE BEGIN 3 */
 		
 	
-		RM3508_Set_Speed(1500,1);
+		RM3508_Set_Speed(speed,3);
+		RM3508_Set_Speed(-speed,4);
 		
 		HAL_Delay(1);
 		

@@ -1,4 +1,4 @@
---cpu=Cortex-M4.fp
+--cpu=Cortex-M4.fp.sp
 "g474_rm3508\startup_stm32g474xx.o"
 "g474_rm3508\main.o"
 "g474_rm3508\gpio.o"

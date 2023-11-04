@@ -1,0 +1,1 @@
+test_f446_nrf_yihang\startup_stm32f446xx.o: startup_stm32f446xx.s

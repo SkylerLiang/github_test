@@ -86,8 +86,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_SPI2_Init();
   MX_SPI3_Init();
+  MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 	Encoder_Init();
   /* USER CODE END 2 */

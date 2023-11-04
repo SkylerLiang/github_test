@@ -7,7 +7,7 @@ g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_de
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Include/core_cm4.h
-g474_rm3508\stm32g4xx_it.o: D:\keil5\ARM\ARMCC\Bin\..\include\stdint.h
+g474_rm3508\stm32g4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Include/cmsis_version.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -15,7 +15,7 @@ g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-g474_rm3508\stm32g4xx_it.o: D:\keil5\ARM\ARMCC\Bin\..\include\stddef.h
+g474_rm3508\stm32g4xx_it.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc_ex.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h
 g474_rm3508\stm32g4xx_it.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio_ex.h
