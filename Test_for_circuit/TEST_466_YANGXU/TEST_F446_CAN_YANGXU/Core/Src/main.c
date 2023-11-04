@@ -101,7 +101,11 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+<<<<<<< HEAD
 		RM3508_Set_Speed(2000,0x02);
+=======
+		RM3508_Set_Speed(4000,1);
+>>>>>>> a7dc6b2230f0a18941949e553be245e90850b693
 	
 		HAL_Delay(100);
   }
@@ -185,7 +189,7 @@ void HAL_CAN_RxFifo1MsgPendingCallback(CAN_HandleTypeDef *hcan)
 {	
 	if(hcan->Instance == hcan2.Instance)
 	{
-		CAN_RxHeaderTypeDef RxMessage;
+		CAN_RxHeaderTypeDef RxMessage; 
 		uint8_t RxData[8] = {0};
 	
 		HAL_CAN_GetRxMessage(hcan, CAN_RX_FIFO1, &RxMessage, RxData);	

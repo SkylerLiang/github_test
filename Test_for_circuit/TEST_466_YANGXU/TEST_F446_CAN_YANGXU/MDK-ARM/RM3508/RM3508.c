@@ -104,7 +104,11 @@ uint8_t RM3508_Set_I(int target_i,uint8_t motor_id)
     //CAN1和CAN2都可以发
 	
 		 RM3508_CAN_Send_Data(&hcan1, RM3508_Sendbuf1, send_id ,8);
+<<<<<<< HEAD
 // 		 RM3508_CAN_Send_Data(&hcan2,  RM3508_Sendbuf1,  send_id,8);
+=======
+	 	RM3508_CAN_Send_Data(&hcan2, RM3508_Sendbuf1, send_id ,8);
+>>>>>>> a7dc6b2230f0a18941949e553be245e90850b693
 		
       
 		return 0;
