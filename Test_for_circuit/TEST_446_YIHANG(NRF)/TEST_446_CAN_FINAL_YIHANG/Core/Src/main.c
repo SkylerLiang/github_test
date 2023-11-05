@@ -101,7 +101,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-		GM6020_Set_Speed(150, 4);
+		GM6020_Set_Speed(150, 3);
 		HAL_Delay(10);
   }
   /* USER CODE END 3 */

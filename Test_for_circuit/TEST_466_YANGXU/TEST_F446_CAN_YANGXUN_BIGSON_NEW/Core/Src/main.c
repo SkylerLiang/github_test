@@ -100,6 +100,7 @@ int main(void)
   while (1)
   {
 		RM3508_Set_Speed(1000,2);
+		HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */

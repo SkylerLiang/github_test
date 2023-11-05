@@ -66,7 +66,7 @@ uint8_t GM6020_Set_V(int target_v, uint8_t motor_id)
         can_Sendbuf[2 * motor_id - 1] = target_v & 0x00ff;      //µÁ—π÷µµÕ8Œª
 
 				GM6020_CAN_Send_Data(&hcan1, can_Sendbuf, send_id, 8);
-//				GM6020_CAN_Send_Data(&hcan2, can_Sendbuf, send_id, 8);
+				GM6020_CAN_Send_Data(&hcan2, can_Sendbuf, send_id, 8);
 		
         return 0;
     }

@@ -1,0 +1,10 @@
+diff a/MDK-ARM/NRF/nrf.c b/MDK-ARM/NRF/nrf.c	(rejected hunks)
+@@ -145,7 +145,7 @@
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | EN_AA,       0x01);											// Ƶ��0�Զ�	ACKӦ������	
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | EN_RXADDR,   0x01);											//ͨ��0�����������
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | SETUP_RETR,  0x1a);											//�Զ��ط���ʱ��500+86us��10��
+-		nRF24L01_Write_Reg(nRF_WRITE_REG | RF_CH,       1);												//����ͨ��Ƶ�ʣ��շ�һ������
++		nRF24L01_Write_Reg(nRF_WRITE_REG | RF_CH,       9);												//����ͨ��Ƶ�ʣ��շ�һ������
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | RF_SETUP,    0x07);											//���ݴ����ʣ�2Mbps�����书�ʣ�0DB��
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | CONFIG,      0x0f);											//16λCRCʹ�ܣ�����ģʽ������ȫ���ж�
+ 		nRF24L01_Write_Reg(nRF_WRITE_REG | nRF_FLUSH_TX, 0xff);											//���TX FIFO�Ĵ���.����ģʽ����
